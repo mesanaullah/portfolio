@@ -6,11 +6,13 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Portfolio from './Pages/Portfolio'
 import Services from './Pages/Services'
+// import StarBackground from './components/StarBackground'
 
 const App = () => {
   return (
     <div className=''>
       <Navbar />
+      {/* <StarBackground /> */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
