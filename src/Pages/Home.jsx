@@ -8,7 +8,7 @@ import Projects from '../components/Projects'
 
 const Home = () => {
     return (
-        <div className='min-h-screen w-full container'>
+        <div className='min-h-screen container'>
             {/* Them toggle */}
             <ThemeToggle />
 
