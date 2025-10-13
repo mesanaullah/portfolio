@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { MdClose } from "react-icons/md";
@@ -9,6 +9,7 @@ const navItems = [
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Services", href: "#services" },
     { name: "Contact", href: "#contact" },
 ];
 const Navbar = () => {
@@ -29,11 +30,12 @@ const Navbar = () => {
     return (
         <nav
             className={cn(
-                "fixed w-full z-40 transition-all duration-300",
+                "w-full z-40 transition-all duration-300",
                 isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
             )}
         >
             <div className="container flex items-center justify-between">
+
                 <a
                     className="text-xl font-bold text-primary flex items-center"
                     href="#hero"
@@ -46,7 +48,8 @@ const Navbar = () => {
 
                 {/* desktop nav */}
                 <div className="hidden md:flex space-x-8">
-                    {/* {navItems.map((item, key) => (
+
+                    {navItems.map((item, key) => (
                         <a
                             key={key}
                             href={item.href}
@@ -54,32 +57,13 @@ const Navbar = () => {
                         >
                             {item.name}
                         </a>
-                    ))} */}
+                    ))}
 
-                    <NavLink to='/'>
-                        <p className="text-foreground/80 hover:text-primary transition-colors duration-300">Home</p>
-                        <hr className='w-2/4 border-none h-[1.5px] bg-white hidden' />
-                    </NavLink>
-
-                    <NavLink to='' href='#about'>
-                        <p className="text-foreground/80 hover:text-primary transition-colors duration-300">About</p>
-                        <hr className='w-2/4 border-none h-[1.5px] bg-white hidden' />
-                    </NavLink>
-
-                    <NavLink to='/projects'>
-                        <p className="text-foreground/80 hover:text-primary transition-colors duration-300">Projects</p>
-                        <hr className='w-2/4 border-none h-[1.5px] bg-white hidden' />
-                    </NavLink>
-
-                    <NavLink to='/services'>
-                        <p className="text-foreground/80 hover:text-primary transition-colors duration-300">Services</p>
-                        <hr className='w-2/4 border-none h-[1.5px] bg-white hidden' />
-                    </NavLink>
-
-                    <NavLink to='/contact'>
-                        <p className="text-foreground/80 hover:text-primary transition-colors duration-300">Contact</p>
-                        <hr className='w-2/4 border-none h-[1.5px] bg-white hidden' />
-                    </NavLink>
+                    {/* <a href="#home" className="text-foreground/80 hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="#about" className="text-foreground/80 hover:text-primary transition-colors duration-300">About</a>
+                    <a href="#projects" className="text-foreground/80 hover:text-primary transition-colors duration-300">Projects</a>
+                    <a href="#services" className="text-foreground/80 hover:text-primary transition-colors duration-300">Services</a>
+                    <a href="#contact" className="text-foreground/80 hover:text-primary transition-colors duration-300">Contact</a> */}
                 </div>
 
                 {/* mobile nav */}
@@ -102,7 +86,7 @@ const Navbar = () => {
                     )}
                 >
                     <div className="flex flex-col space-y-8 text-xl">
-                        {/* {navItems.map((item, key) => (
+                        {navItems.map((item, key) => (
                             <a
                                 key={key}
                                 href={item.href}
@@ -111,28 +95,15 @@ const Navbar = () => {
                             >
                                 {item.name}
                             </a>
-                        ))} */}
-                        
+                        ))}
 
-                        <NavLink onClick={() => setVisible(false)} to='/'>
-                            <p className="text-foreground/80 hover:text-primary transition-colors duration-300">Home</p>
-                        </NavLink>
 
-                        <NavLink onClick={() => setVisible(false)} to='/about'>
-                            <p className="text-foreground/80 hover:text-primary transition-colors duration-300">About</p>
-                        </NavLink>
+                        {/* <a onClick={() => setVisible(false)} href="home" className="text-foreground/80 hover:text-primary transition-colors duration-300">Home</a>
+                        <a onClick={() => setVisible(false)} href="about" className="text-foreground/80 hover:text-primary transition-colors duration-300">About</a>
+                        <a onClick={() => setVisible(false)} href="projects" className="text-foreground/80 hover:text-primary transition-colors duration-300">Projects</a>
+                        <a onClick={() => setVisible(false)} href="services" className="text-foreground/80 hover:text-primary transition-colors duration-300">Services</a>
+                        <a onClick={() => setVisible(false)} href="contact" className="text-foreground/80 hover:text-primary transition-colors duration-300">Contact</a> */}
 
-                        <NavLink onClick={() => setVisible(false)} to='/projects'>
-                            <p className="text-foreground/80 hover:text-primary transition-colors duration-300">Projects</p>
-                        </NavLink>
-
-                        <NavLink onClick={() => setVisible(false)} to='/services'>
-                            <p className="text-foreground/80 hover:text-primary transition-colors duration-300">Services</p>
-                        </NavLink>
-
-                        <NavLink onClick={() => setVisible(false)} to='/contact'>
-                            <p className="text-foreground/80 hover:text-primary transition-colors duration-300">Contact</p>
-                        </NavLink>
                     </div>
                 </div>
             </div>
