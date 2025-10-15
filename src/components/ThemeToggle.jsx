@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 const ThemeToggle = () => {
 
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(true);
 
     useEffect(() => {
         const storedTheme = localStorage.getItem("theme");
