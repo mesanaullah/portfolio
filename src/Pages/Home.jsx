@@ -6,6 +6,7 @@ import About from './About'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import ContectUs from '../components/ContectUs'
+import Footer from '../components/Footer'
 
 const Home = () => {
     return (
@@ -23,6 +24,7 @@ const Home = () => {
                 <Skills />
                 <Projects />
                 <ContectUs />
+                <Footer />
             </main>
             {/* footer */}
         </div>
