@@ -101,7 +101,7 @@ const ContectUs = () => {
                                 <a href="#" target="_blank">
                                     <RiLinkedinBoxFill className='h-5 w-5' />
                                 </a>
-                                <a href="#" target="_blank">
+                                <a href="https://x.com/sanaul06" target="_blank">
                                     <RiTwitterXLine className='h-5 w-5' />
                                 </a>
                                 <a href="https://www.instagram.com/imsanaullahh/" target="_blank">

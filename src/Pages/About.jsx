@@ -35,9 +35,10 @@ const About = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                            <Link to='contact' className="cosmic-button">
+                            {/* <Link to='contact' className="cosmic-button">
                                 {" "}Get In Touch
-                            </Link>
+                            </Link> */}
+                            <a href="#contact" className="cosmic-button">{" "}Get In Touch</a>
 
                             <Link to='' className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
                                 {" "}Download Resume

@@ -29,7 +29,8 @@ const Hero = () => {
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-                        <Link className="cosmic-button" to='/projects'>View My Work</Link>
+                        {/* <Link className="cosmic-button" to='/projects'>View My Work</Link> */}
+                        <a href="#projects" className="cosmic-button">View My Work</a>
                     </div>
                 </div>
             </div>
