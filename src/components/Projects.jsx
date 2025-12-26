@@ -14,6 +14,16 @@ const projects = [
 
     {
         id: 2,
+        title: "UmmeedIndiaFoundation",
+        description: "A MERN-based application portal with secure Razorpay payment integration, real-time admin dashboard, application tracking, and receipt generation. Features JWT authentication, Cloud",
+        image: "/projects/ummeedIndia.png",
+        tags: ["React", "TailwindCSS", "Node.js", "MongoDB"],
+        demoUrl: "https://www.ummeedindia.com/",
+        githubUrl: "https://github.com/mesanaullah/foundation",
+    },
+    
+    {
+        id: 3,
         title: "News Blog Platform",
         description: "A modern news blog platform built with a focus on clean design, readability, dynamic content management, and a seamless browsing experience.",
         image: "/projects/project2.jpg",
