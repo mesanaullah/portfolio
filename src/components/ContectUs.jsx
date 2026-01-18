@@ -98,10 +98,10 @@ const ContectUs = () => {
                         <div className="pt-8">
                             <h4 className="font-medium mb-4"> Connect With Me</h4>
                             <div className="flex space-x-4 justify-center">
-                                <a href="#" target="_blank">
+                                <a href="https://www.linkedin.com/in/mesanaullah" target="_blank">
                                     <RiLinkedinBoxFill className='h-5 w-5' />
                                 </a>
-                                <a href="https://x.com/sanaul06" target="_blank">
+                                <a href="https://x.com/imsanaullahh" target="_blank">
                                     <RiTwitterXLine className='h-5 w-5' />
                                 </a>
                                 <a href="https://www.instagram.com/imsanaullahh/" target="_blank">
