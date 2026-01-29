@@ -6,7 +6,7 @@ const projects = [
         id: 1,
         title: "E-Commerce Platform",
         description: "Full-featured e-commerce platform with user authentication and payment processing.",
-        image: "/projects/project1.jpg",
+        image: "/projects/project1.png",
         tags: ["React", "TailwindCSS", "Node.js", "MongoDB"],
         demoUrl: "https://klyve-frontend.vercel.app/",
         githubUrl: "https://github.com/mesanaullah/Klyve-eCommerce",
