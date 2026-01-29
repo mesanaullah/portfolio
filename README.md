@@ -41,7 +41,7 @@ The website serves as a central place for recruiters and collaborators to explor
 ![alt text](/IMG/image-2.png)
 
 - Projects
-![alt text](/IMG/image-3.png)
+![alt text](/IMG/image-4.png)
 
 ## Live Demo
 
